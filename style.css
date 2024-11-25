@@ -1,0 +1,30 @@
+@font-face {
+    font-family: CooperHewitt;
+    src: url("assets/CooperHewitt-Book.otf");
+}
+
+body {
+    font-family: 'CooperHewitt';
+    color: #f0ffff;
+}
+
+.row {
+    height: 100vh;
+}
+
+img {
+    transition-duration: 0.2s;
+}
+
+img:hover {
+    
+    transform:scale(1.5);
+}
+
+h4 {
+    margin-bottom: 0px;
+}
+
+.bg-subtle {
+    background-color: #5e614d;
+}
