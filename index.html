@@ -1,54 +1,65 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="description" content="Brian LaClair is a full-stack software developer based in Burlington, Vermont, with a passion for building creative and impactful solutions. By day, he works on clinical interoperability and vaccine forecasting, and by night, he develops open-source projects, takes photos, and makes alternative rock music. Explore his work and get in touch!">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-        <link rel="manifest" href="/site.webmanifest">
-        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-        <meta name="msapplication-TileColor" content="#da532c">
-        <meta name="theme-color" content="#ffffff">
         <title>Brian LaClair</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="icon" type="image/png" href="icons/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="icons/favicon.svg" />
+        <link rel="shortcut icon" href="icons/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png" />
+        <meta name="apple-mobile-web-app-title" content="Brian LaClair" />
+        <link rel="manifest" href="icons/site.webmanifest" />
         <link rel="stylesheet" href="style.css">
     </head>
-    <body class="bg-dark">
-        <div class="row bg-dark d-flex justify-content-center align-items-center m-auto">
-            <div class="col-sm-5 p-4 d-flex justify-content-center">
-                <div class="d-flex flex-column justify-content-center align-items-center">
-                    <img class="img-fluid img-square border rounded-circle mb-5" style="max-height: 200px;" src="assets/profile.webp">
-                    <div>
-                        <p>Hi there! 👋 I'm Brian, a full stack software developer based in Burlington, Vermont.</p>
-                        <p>I started coding when I was a kid (by finding an ancient QBASIC executable when I was 9) and haven't stopped since. I've always been fascinated by making things, and to me, programming is an avenue where the physical barriers of creating things are stripped away and you can have unparalleled levels of creative possibility spring to life.</p>
-                        <p>I also sometimes take <a href="https://instagram.com/brianlaclair">photos</a> and make <a href="https://open.spotify.com/artist/2b51b542ccni3Pm9spKHKC">alternative-rock music</a>.</p>
+    <body>
+        <div class="main">
+            <div class="column">
+                <div class="node">
+                    <div class="column">
+                        <img class="profile-picture" src="assets/profile.webp" alt="A picture of Brian LaClair laying in the grass with a flower in his mouth, smiling">
+                    </div>
+                    <div class="primary-text">
+                        <p>Hi there! 👋</p>
+                        <p>I'm Brian, a full stack software developer based in Burlington, Vermont. I started coding when I was a kid (by finding an ancient QBASIC executable when I was 9) and haven't stopped since.</p>
+                        <p>I've always been fascinated by creating things, and to me, programming is an avenue where the physical barriers of making is stripped away and you can have unparalleled levels of creative possibility spring to life.</p>
+                        <p>Occasionally I also take <a href="https://instagram.com/brianlaclair">photos</a> and make <a href="https://open.spotify.com/artist/2b51b542ccni3Pm9spKHKC">alternative-rock music</a>.</p>
                         <p>Let's get in touch 👇</p>
                     </div>
-                    <div class="w-100 p-2 d-flex justify-content-between">
-                        <a href="https://bsky.app/profile/brianlaclair.com"><img height="32" width="32" src="https://cdn.simpleicons.org/bluesky/f0ffff" /></a>
-                        <a href="mailto:brianlaclair@gmail.com"><img height="32" width="32" src="https://cdn.simpleicons.org/gmail/f0ffff" /></a>
-                        <a href="https://discordapp.com/users/190308016350822400"><img height="32" width="32" src="https://cdn.simpleicons.org/discord/f0ffff" /></a>
-                        <a href="https://github.com/brianlaclair"><img height="32" width="32" src="https://cdn.simpleicons.org/github/f0ffff" /></a>
+                    <div class="row">
+                        <a class="no-decoration primary-text" href="https://bsky.app/profile/brianlaclair.com" aria-label="Brian's Bluesky Profile">
+                            <img height="32" width="32" src="assets/icons/bluesky.svg" alt="Bluesky Logo"/>
+                        </a>
+                        <a class="no-decoration primary-text" href="mailto:brianlaclair@gmail.com" aria-label="Brian's email address">
+                            <img height="32" width="32" src="assets/icons/gmail.svg" alt="Gmail Logo"/>
+                        </a>
+                        <a class="no-decoration primary-text" href="https://discordapp.com/users/190308016350822400" aria-label="Brian's Discord profile">
+                            <img height="32" width="32" src="assets/icons/discord.svg" alt="Discord Logo"/>
+                        </a>
+                        <a class="no-decoration primary-text" href="https://github.com/brianlaclair" aria-label="Brian's GitHub profile">
+                            <img height="32" width="32" src="assets/icons/github.svg" alt="GitHub Logo"/>
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-5 p-4 d-flex flex-column justify-content-center align-items-center">
-                <div class="w-100 p-3"><h4><i>currently...</i></h4></div>
-                <div class="bg-subtle p-3 rounded m-3 w-100">
+            <div class="column">
+                <div class="width-full"><h4 class="indent"><i>currently...</i></h4></div>
+                <div class="node bg-subtle">
                     <h4>Clinical Interoperability Developer</h4>
-                    <small class="text-dark">at <a class="text-white" href="https://pcc.com/">Physician's Computer Company</a> since 2022</small>
+                    <small class="text-subtle">at <a href="https://pcc.com/">Physician's Computer Company</a> since 2022</small>
                     <hr>
                     <p>I work with clients and 3rd party vendors to connect clinical systems (lab results, clinical document feeds, and much more) to make pediatric healthcare more efficient.</p>
                     <p>Proudly a subject matter expert on clinical decision support, and developer / maintainer of PCC's vaccine forecasting solution.</p>
-                    <p class="text-dark">Tools: <i>PHP, JavaScript, Postgres, Java, Mirth Connect</i></p>
+                    <p class="text-subtle">Tools: <i>PHP, JavaScript, Postgres, Java, Mirth Connect</i></p>
                 </div>
-                <div class="bg-subtle  p-3 rounded m-3 w-100">
+                <div class="node bg-subtle">
                     <h4>Founder and Developer</h4>
-                    <small class="text-dark">at <a class="text-white" href="https://daycamp.io/">daycamp.io</a> since 2023</small>
+                    <small class="text-subtle">at <a href="https://daycamp.io/">daycamp.io</a> since 2023</small>
                     <hr>
                     <p>I created and actively maintain a donation-based afterschool program management system, utilized by many programs in Vermont and around the United States.</p>
                     <p>Daycamp not only helps these programs run more efficiently - it also makes it easier for them to find funding, enhances security of sensitive data, and gives program staff more time to do the important stuff (being there for kids!)</p>
-                    <p class="text-dark">Tools: <i>PHP, Laravel, JavaScript, MariaDB</i></p>
+                    <p class="text-subtle">Tools: <i>PHP, Laravel, JavaScript, MariaDB</i></p>
                 </div>
             </div>
         </div>
